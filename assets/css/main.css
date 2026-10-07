@@ -1,0 +1,90 @@
+:root {
+  --bg: #101014;
+  --fg: #e6e4dd;
+  --muted: #9a97a0;
+  --accent: #e8b13c;
+  --link: #7fb4e8;
+  --rule: #2a2a33;
+  --max: 46rem;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--bg); }
+
+body {
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+  max-width: var(--max);
+  color: var(--fg);
+  font-family: ui-serif, Georgia, "Times New Roman", serif;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+header nav {
+  display: flex;
+  gap: 1.25rem;
+  align-items: baseline;
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.75rem;
+  margin-bottom: 2.5rem;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.9rem;
+}
+
+.sitename { font-weight: 700; }
+header nav a { color: var(--muted); text-decoration: none; }
+header nav a:hover { color: var(--accent); }
+header nav a.sitename { color: var(--fg); }
+
+h1, h2, h3 {
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  margin-top: 2.5rem;
+  color: var(--accent);
+  font-size: 1.15rem;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero h1 { margin: 0 0 0.25rem; font-size: 2.1rem; }
+.tagline { color: var(--muted); margin: 0 0 1.5rem; }
+.lede { font-size: 1.2rem; }
+
+.status {
+  color: var(--muted);
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.9rem;
+  border-left: 2px solid var(--accent);
+  padding-left: 0.9rem;
+}
+
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
+strong { color: var(--fg); }
+em a, small { letter-spacing: 0.05em; }
+
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+
+footer {
+  margin-top: 4rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #faf9f5;
+    --fg: #1c1b1a;
+    --muted: #6d6a64;
+    --rule: #dedbd3;
+  }
+}

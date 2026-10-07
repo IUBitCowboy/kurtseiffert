@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>Kurt Seiffert</h1>
+  <p class="tagline">Independent researcher — Bloomington, Indiana.</p>
+  <p class="lede">
+    I study AI agents and world models — what it takes for a machine to
+    <em>understand its situation</em> rather than pattern-match its way through it.
+  </p>
+</section>
+
+<section>
+  <h2>What I'm working on</h2>
+  <p>
+    <strong><a href="{{ ref . "/mcp-grid" }}">MCP GRID — Mortality Control Protocol on the Game Grid</a></strong>.
+    An experiment in grounded AI cognition: an LLM agent plays the roguelike
+    <em>A<small>NGBAND</small></em> under a harness that makes its situation real —
+    mortal, resource-bound, with affective state mediating between perception and action.
+    Characters die; their descendants inherit only what their ancestors left behind
+    as written artifacts. I want to know whether that loop produces something
+    we'd call a world model — or whether it produces optimization without understanding.
+  </p>
+  <p class="status">
+    Status: harness and instrument design; preregistration planned.
+    <a href="{{ ref . "/mcp-grid" }}">Project page &rarr;</a>
+  </p>
+</section>
+{{ end }}

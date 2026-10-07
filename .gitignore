@@ -1,0 +1,13 @@
+# Build output
+public/
+resources/
+.hugo_build.lock
+
+# OS
+.DS_Store
+
+# Local env
+.env
+.env.*
+*.pem
+*.key

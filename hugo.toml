@@ -1,0 +1,23 @@
+# Kurt Seiffert — personal research site
+# Build: hugo --minify
+baseURL = "https://iubitcowboy.github.io/kurtseiffert/"
+locale = "en-us"
+title = "Kurt Seiffert"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT"]
+
+[params]
+  description = "Independent research on AI agents, world models, and simulated mortality."
+  author = "Kurt Seiffert"
+  location = "Bloomington, Indiana"
+  email = "seiffert@iu.edu"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.parser]
+      wrapStandAloneImageWithinParagraph = false
+
+[menus]
+  [[menus.main]]
+    name = "MCP GRID"
+    pageRef = "/mcp-grid"
+    weight = 10

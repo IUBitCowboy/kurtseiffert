@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if .IsHome }}{{ site.Title }} — {{ site.Params.description }}{{ else }}{{ .Title }} — {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Description | default site.Params.description }}">
+  {{ $style := resources.Get "css/main.css" | minify }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <a class="sitename" href="{{ site.BaseURL }}">kurt seiffert</a>
+      {{ range site.Menus.main }}
+      <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+  </header>
+  <main>
+  {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    <p>Kurt Seiffert — {{ site.Params.location }} — <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></p>
+  </footer>
+</body>
+</html>
