@@ -1,6 +1,6 @@
 # Kurt Seiffert — personal research site
 # Build: hugo --minify
-baseURL = "https://iubitcowboy.github.io/kurtseiffert/"
+baseURL = "https://kurtseiffert.dev/"
 locale = "en-us"
 title = "Kurt Seiffert"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap", "robotsTXT"]
