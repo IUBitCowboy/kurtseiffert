@@ -11,3 +11,4 @@ resources/
 .env.*
 *.pem
 *.key
+# dummy line
